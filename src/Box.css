@@ -1,0 +1,16 @@
+.Box {
+	position: relative;
+	float: left;
+}
+.Box-button {
+	position: absolute;
+	bottom: 8px;
+	right: 16px;
+	font-size: 18px;
+}
+
+.Box-square {
+	/* width: 100%; */
+	height: auto;
+	opacity: 0.3;
+}
