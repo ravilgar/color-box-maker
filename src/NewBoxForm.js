@@ -1,8 +1,10 @@
 import React, { Component } from "react";
 import "./NewBoxForm.css";
 import { v4 as uuidv4 } from "uuid";
+import { connect } from "react-redux";
+import { create } from "./actions";
 
-export default class NewBoxForm extends Component {
+class NewBoxForm extends Component {
 	constructor(props) {
 		super(props);
 
@@ -66,3 +68,8 @@ export default class NewBoxForm extends Component {
 		);
 	}
 }
+const mapStateToProps = (state) => ({});
+
+const mapDispatchToProps = { create };
+
+export default connect(mapStateToProps, mapDispatchToProps)(NewBoxForm);
